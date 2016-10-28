@@ -2,9 +2,11 @@
 library("doParallel", lib.loc="C:/Program Files/R/R-3.3.1/library")
 library("doSNOW", lib.loc="C:/Program Files/R/R-3.3.1/library")
 
+# print
+print('koson')
 
 # set available core
-cl <- makeCluster(4)
+
 # unix OS
 # registerDoParallel(cl)
 # windows OS
@@ -20,3 +22,5 @@ system.time(
     return(vector[i] / sqrt(vector[i]) ^ 3)
   })
 stopCluster(cl)
+
+print('end')

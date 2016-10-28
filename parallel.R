@@ -2,8 +2,7 @@
 library("doParallel", lib.loc="C:/Program Files/R/R-3.3.1/library")
 library("doSNOW", lib.loc="C:/Program Files/R/R-3.3.1/library")
 
-# 偵測Cores
-detectCores()
+
 # set available core
 cl <- makeCluster(4)
 # unix OS
